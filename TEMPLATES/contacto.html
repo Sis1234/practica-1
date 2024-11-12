@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Decor - Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="head">
+        <img src="/static/img/logo.jpg" alt="logo" class="logotipo">
+        <h1 class="empresa">ART DECOR</h1>
+        <nav class="navbar">
+            <a href="/">Inicio</a>
+            <a href="/quienessomos">Quiénes Somos</a>
+            <a href="/servicios">Servicios</a>
+            <a href="/noticias">Noticias</a>
+            <a href="/contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="content sau">
+        <h1 class="Clientess">CONTACTO</h1>
+        <form action="/submit" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <div class="contact-info">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Avenida Juan Pablo II, El Alto, Bolivia</p>
+            <p><strong>Número de Teléfono:</strong> +591 77769451</p>
+            <p><strong>Correo de Contacto:</strong> upea@gmail.com</p>
+        </div>
+
+        <h2>Ubicación</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.6371171514174!2d-68.19698212567417!3d-16.49390244056683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf003dec12e7%3A0x1b2669bac07dc20e!2sUPEA%20Juan%20Pablo%20II!5e0!3m2!1ses-419!2sbo!4v1730752729191!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+</body>
+</html>
